@@ -1,0 +1,131 @@
+{
+  "id": "a37359ae-d8af-44f2-bdea-461582502e10",
+  "version": "2.0",
+  "name": "Teste de Automação 2.0 ",
+  "url": "https://fecaf.brightspace.com",
+  "tests": [{
+    "id": "adc83073-cd77-4f4c-9a72-a97a06ee13b8",
+    "name": "teste de automação 2.0",
+    "commands": [{
+      "id": "41f878a0-e8b5-42ac-877c-49030ddff74e",
+      "comment": "",
+      "command": "open",
+      "target": "/d2l/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e28ea839-667d-4eb8-b41f-8a8cdea9bdf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59fb7591-c4d5-4e61-89b3-6d0797b859a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a0735ab-4e37-4ba5-8d05-3fcdd4c984e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "70182"
+    }, {
+      "id": "9a9797e9-b6bf-4b01-ae9e-6ab6e3a1d74e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "15122004"
+    }, {
+      "id": "da43f821-8ee2-4966-8967-37fa702aff2f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5276fd5c-a4c4-462b-b8d7-12a080ba02cf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c5414b9-830c-4980-9588-c83337f59947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d2l-navigation-s-personal-menu-wrapper",
+      "targets": [
+        ["css=.d2l-navigation-s-personal-menu-wrapper", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Kleber Alves Santana')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae9dbc10-ef37-402a-b748-896a5aa02b12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fazer logout",
+      "targets": [
+        ["linkText=Fazer logout", "linkText"],
+        ["css=.d2l-personal-tools-separated-item:nth-child(6) .d2l-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Fazer logout')]", "xpath:link"],
+        ["xpath=//a[@onclick='D2L.O(\"__g1\",4)();return false;']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//li[6]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fazer logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe5fdc0-1dfe-4c7a-b9d1-f0b89e8d10a2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e73abc54-567a-4995-8bb5-431bcae651b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["adc83073-cd77-4f4c-9a72-a97a06ee13b8"]
+  }],
+  "urls": ["https://fecaf.brightspace.com/"],
+  "plugins": []
+}
